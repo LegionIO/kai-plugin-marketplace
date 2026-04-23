@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "plugins": [
+    {
+      "name": "cron",
+      "displayName": "Cron Scheduler",
+      "description": "Schedule recurring tasks and reminders",
+      "repo": "legionio/kai-plugin-cron",
+      "ref": "main",
+      "version": "1.0.0",
+      "author": "LegionIO",
+      "tags": ["scheduling", "automation"],
+      "icon": "clock"
+    },
+    {
+      "name": "bluebubbles",
+      "displayName": "BlueBubbles",
+      "description": "iMessage integration via BlueBubbles",
+      "repo": "LegionIO/kai-plugin-bluebubbles",
+      "ref": "main",
+      "version": "1.0.0",
+      "author": "LegionIO",
+      "tags": ["messaging", "imessage"],
+      "icon": "message-circle"
+    }
+  ]
+}
