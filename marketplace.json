@@ -6,7 +6,7 @@
       "displayName": "Cron Scheduler",
       "description": "Schedule recurring tasks and reminders",
       "repo": "legionio/kai-plugin-cron",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": "LegionIO",
       "tags": ["scheduling", "automation"],
       "icon": "clock"
