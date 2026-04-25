@@ -41,25 +41,19 @@ To list your plugin in this marketplace, submit a PR adding an entry to `marketp
 Plugins must publish GitHub releases with:
 - **Tag**: `v{version}` (e.g., `v1.0.0`)
 - **Asset**: `{name}-v{version}.tar.gz` (e.g., `cron-v1.0.0.tar.gz`)
-- **Contents**: Pre-built plugin files (`plugin.json`, `backend.js`, `frontend.js`, etc.)
+- **Contents**: `plugin.json` and `dist/` folder with pre-built plugin files
 
 Kai downloads and extracts the release asset directly — no build step runs on the user's machine.
 
-### Plugin File Naming
+### Plugin Structure
 
-Plugins use a clear backend/frontend naming convention:
-- **`backend.js`** - Node.js backend code (tools, schedulers, storage, etc.)
-- **`frontend.js`** - React UI components (panels, settings screens, etc.)
+Plugins follow a standard structure:
+- **`plugin.json`** - Plugin manifest (name, version, description, permissions)
+- **`dist/backend.js`** - Node.js backend code (tools, schedulers, storage, etc.)
+- **`dist/frontend.js`** - React UI components (panels, settings screens) *optional*
+- **`src/`** - Source code (TypeScript/JavaScript)
 
-Update your `plugin.json`:
-```json
-{
-  "main": "backend.js",
-  "renderer": "frontend.js"
-}
-```
-
-**Note**: The legacy `main.js`/`renderer.js` naming is still supported for backward compatibility.
+Your `plugin.json` doesn't need to specify file paths — Kai automatically looks for `dist/backend.js` and `dist/frontend.js`.
 
 ## Schema Version
 
