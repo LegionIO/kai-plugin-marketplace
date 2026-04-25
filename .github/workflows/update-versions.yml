@@ -69,14 +69,36 @@ jobs:
               continue
             fi
 
-            # Compare versions
-            if [ "$current_version" = "$latest_version" ]; then
-              echo "  ✓ Already up to date: v$latest_version"
-            else
-              echo "  ✓ Updating: v$current_version → v$latest_version"
-              # Update the version in the temp file
+            # Download asset to extract plugin.json for author
+            asset_url=$(echo "$latest_release" | jq -r --arg asset "$asset_name" '.assets[] | select(.name == $asset) | .url')
+            plugin_author=""
+            if [ -n "$asset_url" ]; then
+              curl -sL -H "Authorization: token $GH_TOKEN" -H "Accept: application/octet-stream" "$asset_url" -o plugin_asset.tar.gz 2>/dev/null
+              plugin_author=$(tar -xOzf plugin_asset.tar.gz ./plugin.json 2>/dev/null | jq -r '.author // empty')
+              rm -f plugin_asset.tar.gz
+            fi
+
+            # Compare versions and update
+            updated=false
+            if [ "$current_version" != "$latest_version" ]; then
+              echo "  ✓ Updating version: v$current_version → v$latest_version"
               jq ".plugins[$i].version = \"$latest_version\"" marketplace.tmp.json > marketplace.tmp2.json
               mv marketplace.tmp2.json marketplace.tmp.json
+              updated=true
+            fi
+
+            if [ -n "$plugin_author" ]; then
+              current_author=$(echo "$marketplace_json" | jq -r ".plugins[$i].author")
+              if [ "$current_author" != "$plugin_author" ]; then
+                echo "  ✓ Updating author: $current_author → $plugin_author"
+                jq ".plugins[$i].author = \"$plugin_author\"" marketplace.tmp.json > marketplace.tmp2.json
+                mv marketplace.tmp2.json marketplace.tmp.json
+                updated=true
+              fi
+            fi
+
+            if [ "$updated" = false ]; then
+              echo "  ✓ Already up to date: v$latest_version"
             fi
           done
 

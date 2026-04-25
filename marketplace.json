@@ -2,29 +2,13 @@
   "schemaVersion": 1,
   "plugins": [
     {
-      "name": "example",
-      "displayName": "Example Plugin",
-      "description": "A template and reference implementation for building Kai plugins",
-      "repository": "LegionIO/kai-plugin-example",
-      "version": "1.0.1",
-      "author": "LegionIO",
-      "tags": [
-        "template",
-        "example"
-      ],
-      "icon": "plug"
-    },
-    {
       "name": "cron",
       "displayName": "Cron Scheduler",
       "description": "Schedule recurring tasks and reminders",
       "repository": "LegionIO/kai-plugin-cron",
       "version": "0.1.6",
-      "author": "LegionIO",
-      "tags": [
-        "scheduling",
-        "automation"
-      ],
+      "author": "Kyle Boyer",
+      "tags": ["scheduling", "automation"],
       "icon": "clock"
     },
     {
@@ -33,12 +17,19 @@
       "description": "iMessage integration via BlueBubbles",
       "repository": "LegionIO/kai-plugin-bluebubbles",
       "version": "0.2.5",
-      "author": "LegionIO",
-      "tags": [
-        "messaging",
-        "imessage"
-      ],
+      "author": "Kyle Boyer",
+      "tags": ["messaging", "imessage"],
       "icon": "message-circle"
+    },
+    {
+      "name": "example",
+      "displayName": "Example Plugin",
+      "description": "A template and reference implementation for building Kai plugins",
+      "repository": "LegionIO/kai-plugin-example",
+      "version": "1.0.1",
+      "author": "LegionIO",
+      "tags": ["template", "example"],
+      "icon": "plug"
     }
   ]
 }
