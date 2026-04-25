@@ -2,6 +2,11 @@ name: Update Plugin Versions
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'marketplace.json'
 
 permissions:
   contents: write

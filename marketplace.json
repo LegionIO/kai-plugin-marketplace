@@ -20,6 +20,16 @@
       "author": "LegionIO",
       "tags": ["messaging", "imessage"],
       "icon": "message-circle"
+    },
+    {
+      "name": "example",
+      "displayName": "Example Plugin",
+      "description": "A template and reference implementation for building Kai plugins",
+      "repository": "LegionIO/kai-plugin-example",
+      "version": "1.0.0",
+      "author": "LegionIO",
+      "tags": ["template", "example"],
+      "icon": "plug"
     }
   ]
 }
