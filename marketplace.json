@@ -8,7 +8,10 @@
       "repository": "LegionIO/kai-plugin-cron",
       "version": "0.1.6",
       "author": "Kyle Boyer",
-      "tags": ["scheduling", "automation"],
+      "tags": [
+        "scheduling",
+        "automation"
+      ],
       "icon": "clock"
     },
     {
@@ -18,7 +21,10 @@
       "repository": "LegionIO/kai-plugin-bluebubbles",
       "version": "0.2.5",
       "author": "Kyle Boyer",
-      "tags": ["messaging", "imessage"],
+      "tags": [
+        "messaging",
+        "imessage"
+      ],
       "icon": "message-circle"
     },
     {
@@ -27,8 +33,11 @@
       "description": "A template and reference implementation for building Kai plugins",
       "repository": "LegionIO/kai-plugin-example",
       "version": "1.0.1",
-      "author": "LegionIO",
-      "tags": ["template", "example"],
+      "author": "Your Name",
+      "tags": [
+        "template",
+        "example"
+      ],
       "icon": "plug"
     }
   ]
