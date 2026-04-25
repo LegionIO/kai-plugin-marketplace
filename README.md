@@ -41,9 +41,25 @@ To list your plugin in this marketplace, submit a PR adding an entry to `marketp
 Plugins must publish GitHub releases with:
 - **Tag**: `v{version}` (e.g., `v1.0.0`)
 - **Asset**: `{name}-v{version}.tar.gz` (e.g., `cron-v1.0.0.tar.gz`)
-- **Contents**: Pre-built plugin files (`plugin.json`, `main.js`, `renderer.js`, etc.)
+- **Contents**: Pre-built plugin files (`plugin.json`, `backend.js`, `frontend.js`, etc.)
 
 Kai downloads and extracts the release asset directly — no build step runs on the user's machine.
+
+### Plugin File Naming
+
+Plugins use a clear backend/frontend naming convention:
+- **`backend.js`** - Node.js backend code (tools, schedulers, storage, etc.)
+- **`frontend.js`** - React UI components (panels, settings screens, etc.)
+
+Update your `plugin.json`:
+```json
+{
+  "main": "backend.js",
+  "renderer": "frontend.js"
+}
+```
+
+**Note**: The legacy `main.js`/`renderer.js` naming is still supported for backward compatibility.
 
 ## Schema Version
 
