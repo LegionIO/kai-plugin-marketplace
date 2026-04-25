@@ -35,15 +35,15 @@ jobs:
           # Iterate through each plugin
           for i in $(seq 0 $((plugin_count - 1))); do
             name=$(echo "$marketplace_json" | jq -r ".plugins[$i].name")
-            repo=$(echo "$marketplace_json" | jq -r ".plugins[$i].repo")
+            repository=$(echo "$marketplace_json" | jq -r ".plugins[$i].repository")
             current_version=$(echo "$marketplace_json" | jq -r ".plugins[$i].version")
 
             echo ""
             echo "Processing: $name (current: v$current_version)"
-            echo "  Repository: https://github.com/$repo"
+            echo "  Repository: https://github.com/$repository"
 
             # Fetch latest release from GitHub
-            latest_release=$(gh api repos/$repo/releases/latest 2>/dev/null || echo "")
+            latest_release=$(gh api repos/$repository/releases/latest 2>/dev/null || echo "")
 
             if [ -z "$latest_release" ]; then
               echo "  ⚠️  No releases found, keeping current version"

@@ -15,7 +15,7 @@ To list your plugin in this marketplace, submit a PR adding an entry to `marketp
   "name": "your-plugin-name",
   "displayName": "Your Plugin",
   "description": "What your plugin does",
-  "repo": "your-org/kai-plugin-name",
+  "repository": "your-org/kai-plugin-name",
   "version": "1.0.0",
   "author": "Your Name",
   "tags": ["category"],
@@ -30,7 +30,7 @@ To list your plugin in this marketplace, submit a PR adding an entry to `marketp
 | `name` | Yes | Must match the `name` in your plugin's `plugin.json` |
 | `displayName` | Yes | Human-readable name shown in the marketplace UI |
 | `description` | Yes | Short description of what the plugin does |
-| `repo` | Yes | GitHub `owner/repo` — Kai downloads pre-built releases from this |
+| `repository` | Yes | GitHub `owner/repo` — Kai downloads pre-built releases from this |
 | `version` | Yes | Semantic version string (Kai downloads from release tag `v{version}`) |
 | `author` | No | Author or organization name |
 | `tags` | No | Array of category tags for filtering |
