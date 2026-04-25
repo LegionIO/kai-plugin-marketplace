@@ -1,6 +1,19 @@
 {
   "schemaVersion": 1,
   "plugins": [
+     {
+      "name": "example",
+      "displayName": "Example Plugin",
+      "description": "A template and reference implementation for building Kai plugins",
+      "repository": "LegionIO/kai-plugin-example",
+      "version": "1.0.1",
+      "author": "LegionIO",
+      "tags": [
+        "template",
+        "example"
+      ],
+      "icon": "plug"
+    },
     {
       "name": "cron",
       "displayName": "Cron Scheduler",
@@ -26,19 +39,6 @@
         "imessage"
       ],
       "icon": "message-circle"
-    },
-    {
-      "name": "example",
-      "displayName": "Example Plugin",
-      "description": "A template and reference implementation for building Kai plugins",
-      "repository": "LegionIO/kai-plugin-example",
-      "version": "1.0.1",
-      "author": "LegionIO",
-      "tags": [
-        "template",
-        "example"
-      ],
-      "icon": "plug"
     }
   ]
 }
