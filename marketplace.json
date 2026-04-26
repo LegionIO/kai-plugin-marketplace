@@ -32,8 +32,8 @@
       "displayName": "Example Plugin",
       "description": "A template and reference implementation for building Kai plugins",
       "repository": "LegionIO/kai-plugin-example",
-      "version": "1.0.2",
-      "author": "Your Name",
+      "version": "1.0.3",
+      "author": "John Hollow <https://github.com/iamhollow>",
       "tags": [
         "template",
         "example"
