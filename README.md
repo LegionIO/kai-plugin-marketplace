@@ -17,7 +17,7 @@ To list your plugin in this marketplace, submit a PR adding an entry to `marketp
   "description": "What your plugin does",
   "repository": "your-org/kai-plugin-name",
   "version": "1.0.0",
-  "author": "Your Name",
+  "author": "Your Name <https://github.com/yourusername>",
   "tags": ["category"],
   "icon": "lucide-icon-name"
 }
@@ -32,7 +32,7 @@ To list your plugin in this marketplace, submit a PR adding an entry to `marketp
 | `description` | Yes | Short description of what the plugin does |
 | `repository` | Yes | GitHub `owner/repo` — Kai downloads pre-built releases from this |
 | `version` | Yes | Semantic version string (Kai downloads from release tag `v{version}`) |
-| `author` | No | Author or organization name |
+| `author` | No | Author name with optional URL in format `Name <https://url>`. URL can be GitHub, personal website, etc. Displays as clickable link in UI. |
 | `tags` | No | Array of category tags for filtering |
 | `icon` | No | Lucide icon name for the marketplace UI |
 
