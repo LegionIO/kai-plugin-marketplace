@@ -7,7 +7,7 @@
       "description": "Schedule recurring tasks and reminders",
       "repository": "LegionIO/kai-plugin-cron",
       "version": "0.1.7",
-      "author": "Kyle Boyer",
+      "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "scheduling",
         "automation"
@@ -20,7 +20,7 @@
       "description": "iMessage integration via BlueBubbles",
       "repository": "LegionIO/kai-plugin-bluebubbles",
       "version": "0.2.6",
-      "author": "Kyle Boyer",
+      "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "messaging",
         "imessage"
