@@ -39,6 +39,20 @@
         "example"
       ],
       "icon": "plug"
+    },
+    {
+      "name": "legion",
+      "displayName": "Legion",
+      "description": "Legion integration — daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference",
+      "repository": "LegionIO/kai-plugin-legion",
+      "version": "1.0.1",
+      "author": "John Hollow <https://github.com/iamhollow>",
+      "tags": [
+        "integration",
+        "daemon",
+        "inference"
+      ],
+      "icon": "brain-circuit"
     }
   ]
 }
