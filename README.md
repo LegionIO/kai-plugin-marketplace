@@ -1,59 +1,19 @@
-# Kai Plugin Marketplace (LegionIO)
+# Kai Plugin Marketplace
 
-Open-source plugin catalog for [Kai Desktop](https://github.com/LegionIO/kai-desktop).
+Plugin catalog for Kai Desktop.
 
 ## About
 
-This repository hosts `marketplace.json` — a catalog of community plugins available for installation through Kai's built-in plugin marketplace.
+This repository hosts `marketplace.json` — a catalog of plugins available for installation through Kai's built-in plugin marketplace.
 
-## Adding a Plugin
+## Plugins
 
-To list your plugin in this marketplace, submit a PR adding an entry to `marketplace.json`:
-
-```json
-{
-  "name": "your-plugin-name",
-  "displayName": "Your Plugin",
-  "description": "What your plugin does",
-  "repository": "your-org/kai-plugin-name",
-  "version": "1.0.0",
-  "author": "Your Name <https://github.com/yourusername>",
-  "tags": ["category"],
-  "icon": "lucide-icon-name"
-}
-```
-
-### Fields
-
-| Field | Required | Description |
-|-------|----------|-------------|
-| `name` | Yes | Must match the `name` in your plugin's `plugin.json` |
-| `displayName` | Yes | Human-readable name shown in the marketplace UI |
-| `description` | Yes | Short description of what the plugin does |
-| `repository` | Yes | GitHub `owner/repo` — Kai downloads pre-built releases from this |
-| `version` | Yes | Semantic version string (Kai downloads from release tag `v{version}`) |
-| `author` | No | Author name with optional URL in format `Name <https://url>`. URL can be GitHub, personal website, etc. Displays as clickable link in UI. |
-| `tags` | No | Array of category tags for filtering |
-| `icon` | No | Lucide icon name for the marketplace UI |
-
-### Plugin Release Requirements
-
-Plugins must publish GitHub releases with:
-- **Tag**: `v{version}` (e.g., `v1.0.0`)
-- **Asset**: `{name}-v{version}.tar.gz` (e.g., `cron-v1.0.0.tar.gz`)
-- **Contents**: `plugin.json` and `dist/` folder with pre-built plugin files
-
-Kai downloads and extracts the release asset directly — no build step runs on the user's machine.
-
-### Plugin Structure
-
-Plugins follow a standard structure:
-- **`plugin.json`** - Plugin manifest (name, version, description, permissions)
-- **`dist/backend.js`** - Node.js backend code (tools, schedulers, storage, etc.)
-- **`dist/frontend.js`** - React UI components (panels, settings screens) *optional*
-- **`src/`** - Source code (TypeScript/JavaScript)
-
-Your `plugin.json` doesn't need to specify file paths — Kai automatically looks for `dist/backend.js` and `dist/frontend.js`.
+| Plugin | Version | Description |
+|--------|---------|-------------|
+| [cron](https://github.com/LegionIO/kai-plugin-cron) | v0.1.10 | Schedule recurring tasks and reminders |
+| [bluebubbles](https://github.com/LegionIO/kai-plugin-bluebubbles) | v0.2.7 | iMessage integration via BlueBubbles |
+| [example](https://github.com/LegionIO/kai-plugin-example) | v1.0.4 | A template and reference implementation for building Kai plugins |
+| [legion](https://github.com/LegionIO/kai-plugin-legion) | v1.0.2 | Legion integration — daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference |
 
 ## Schema Version
 
