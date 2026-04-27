@@ -108,16 +108,47 @@ jobs:
           # Replace original with updated version
           mv marketplace.tmp.json marketplace.json
 
+      - name: Generate README
+        run: |
+          cat > README.md <<'HEADER'
+          # Kai Plugin Marketplace
+
+          Plugin catalog for Kai Desktop.
+
+          ## About
+
+          This repository hosts `marketplace.json` — a catalog of plugins available for installation through Kai's built-in plugin marketplace.
+
+          ## Plugins
+
+          | Plugin | Version | Description |
+          |--------|---------|-------------|
+          HEADER
+          # Strip leading whitespace from heredoc
+          sed -i 's/^          //' README.md
+
+          # Generate table rows from marketplace.json
+          jq -r '.plugins[] | "| [\(.name)](https://github.com/\(.repository)) | v\(.version) | \(.description) |"' marketplace.json >> README.md
+
+          cat >> README.md <<'FOOTER'
+
+          ## Schema Version
+
+          The `schemaVersion` field at the root of `marketplace.json` indicates the catalog format version. Current version: `1`.
+          FOOTER
+
+          echo "Generated README.md with $(jq '.plugins | length' marketplace.json) plugins"
+
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet marketplace.json; then
+          if git diff --quiet marketplace.json README.md; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No version changes detected"
+            echo "No changes detected"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "Version changes detected:"
-            git diff marketplace.json
+            echo "Changes detected:"
+            git diff marketplace.json README.md
           fi
 
       - name: Commit and push changes
@@ -126,7 +157,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add marketplace.json
+          git add marketplace.json README.md
           git commit -m "chore: update plugin versions from latest releases"
           git push origin main
 
