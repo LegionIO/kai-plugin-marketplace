@@ -6,7 +6,7 @@
       "displayName": "Cron Scheduler",
       "description": "Schedule recurring tasks and reminders",
       "repository": "LegionIO/kai-plugin-cron",
-      "version": "0.1.10",
+      "version": "0.1.11",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "scheduling",
@@ -19,7 +19,7 @@
       "displayName": "BlueBubbles",
       "description": "iMessage integration via BlueBubbles",
       "repository": "LegionIO/kai-plugin-bluebubbles",
-      "version": "0.2.8",
+      "version": "0.2.9",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "messaging",
@@ -32,7 +32,7 @@
       "displayName": "Example Plugin",
       "description": "A template and reference implementation for building Kai plugins",
       "repository": "LegionIO/kai-plugin-example",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "author": "John Hollow <https://github.com/iamhollow>",
       "tags": [
         "template",
@@ -45,7 +45,7 @@
       "displayName": "Legion",
       "description": "Legion integration — daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference",
       "repository": "LegionIO/kai-plugin-legion",
-      "version": "2.0.0",
+      "version": "2.0.2",
       "author": "John Hollow <https://github.com/iamhollow>",
       "tags": [
         "integration",
