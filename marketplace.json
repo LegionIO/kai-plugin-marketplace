@@ -6,7 +6,7 @@
       "displayName": "Cron Scheduler",
       "description": "Schedule recurring tasks and reminders",
       "repository": "LegionIO/kai-plugin-cron",
-      "version": "0.1.11",
+      "version": "0.1.12",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "scheduling",
@@ -45,7 +45,7 @@
       "displayName": "Legion",
       "description": "Legion integration — daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference",
       "repository": "LegionIO/kai-plugin-legion",
-      "version": "2.0.3",
+      "version": "2.0.4",
       "author": "John Hollow <https://github.com/iamhollow>",
       "tags": [
         "integration",
