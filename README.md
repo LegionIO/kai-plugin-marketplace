@@ -10,8 +10,8 @@ This repository hosts `marketplace.json` — a catalog of plugins available for 
 
 | Plugin | Version | Description |
 |--------|---------|-------------|
-| [cron](https://github.com/LegionIO/kai-plugin-cron) | v0.1.12 | Schedule recurring tasks and reminders |
-| [bluebubbles](https://github.com/LegionIO/kai-plugin-bluebubbles) | v0.2.15 | iMessage integration via BlueBubbles |
+| [cron](https://github.com/LegionIO/kai-plugin-cron) | v0.1.13 | Schedule recurring tasks and reminders |
+| [bluebubbles](https://github.com/LegionIO/kai-plugin-bluebubbles) | v0.2.16 | iMessage integration via BlueBubbles |
 | [example](https://github.com/LegionIO/kai-plugin-example) | v1.0.5 | A template and reference implementation for building Kai plugins |
 | [legion](https://github.com/LegionIO/kai-plugin-legion) | v2.1.8 | Legion integration — daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference |
 
