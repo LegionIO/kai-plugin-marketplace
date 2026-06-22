@@ -12,7 +12,9 @@
         "scheduling",
         "automation"
       ],
-      "icon": "clock"
+      "icon": "clock",
+      "archiveHash": "7650eee4a7119c9648fcff28d2edb37e3ac62e9d53a020227f95693e40bb802c",
+      "fileHash": "165b523155cdfd68b35d939e12dd62fc19f384c487ff92e832819946d410e896"
     },
     {
       "name": "bluebubbles",
@@ -25,7 +27,9 @@
         "messaging",
         "imessage"
       ],
-      "icon": "message-circle"
+      "icon": "message-circle",
+      "archiveHash": "724f94147e0b35fa5321ca08131390dccd96153b12da523e55f126ee9369501b",
+      "fileHash": "1b85c291f4c40255daf4a78ad401bd7a4a699b08bc23b37c4a37dcacb72aec50"
     },
     {
       "name": "example",
@@ -38,7 +42,9 @@
         "template",
         "example"
       ],
-      "icon": "plug"
+      "icon": "plug",
+      "archiveHash": "c4301f45fabb38095386dd92433e7b8384323932bf9ae38d5853ecd4b43b0f8f",
+      "fileHash": "0076afc39ebbf646c11fdce92efa5ed6eaded60ffdd79949fabb8e9847228b1b"
     },
     {
       "name": "legion",
@@ -52,7 +58,9 @@
         "daemon",
         "inference"
       ],
-      "icon": "brain-circuit"
+      "icon": "brain-circuit",
+      "archiveHash": "d03faf522a12779abb4eff64cbd03c3deeefae72221cde6ae59a84bbcc801517",
+      "fileHash": "033a82fbccecf6861ce54275ddcf6dc2b2b6a247e1cdeaed0a820d770dfa8c79"
     }
   ]
 }
