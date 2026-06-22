@@ -18,6 +18,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
@@ -36,6 +41,34 @@ jobs:
 
           # Create a temporary file for the updated marketplace
           echo "$marketplace_json" > marketplace.tmp.json
+
+          # Mirrors hashPluginDirectory() in kai-desktop electron/plugins/plugin-integrity.ts
+          cat > /tmp/hash-plugin-dir.cjs <<'EOF'
+          const { createHash } = require('crypto');
+          const { readdirSync, readFileSync } = require('fs');
+          const { join, relative } = require('path');
+          const root = process.argv[2];
+          function walk(dir) {
+            const out = [];
+            for (const e of readdirSync(dir, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+              const p = join(dir, e.name);
+              if (e.isDirectory()) out.push(...walk(p));
+              else if (e.isFile()) {
+                const r = relative(root, p).replace(/\\/g, '/');
+                if (r !== 'settings.json') out.push(p);
+              }
+            }
+            return out;
+          }
+          const h = createHash('sha256');
+          for (const f of walk(root)) {
+            h.update(relative(root, f).replace(/\\/g, '/'));
+            h.update('\0');
+            h.update(readFileSync(f));
+            h.update('\0');
+          }
+          process.stdout.write(h.digest('hex'));
+          EOF
 
           # Iterate through each plugin
           for i in $(seq 0 $((plugin_count - 1))); do
@@ -69,13 +102,24 @@ jobs:
               continue
             fi
 
-            # Download asset to extract plugin.json for author
+            # Download asset to extract plugin.json and compute integrity hashes
             asset_url=$(echo "$latest_release" | jq -r --arg asset "$asset_name" '.assets[] | select(.name == $asset) | .url')
             plugin_author=""
+            archive_hash=""
+            file_hash=""
             if [ -n "$asset_url" ]; then
               curl -sL -H "Authorization: token $GH_TOKEN" -H "Accept: application/octet-stream" "$asset_url" -o plugin_asset.tar.gz 2>/dev/null
-              plugin_author=$(tar -xOzf plugin_asset.tar.gz ./plugin.json 2>/dev/null | jq -r '.author // empty')
-              rm -f plugin_asset.tar.gz
+
+              archive_hash=$(sha256sum plugin_asset.tar.gz | cut -d' ' -f1)
+
+              extract_dir=$(mktemp -d)
+              tar -xzf plugin_asset.tar.gz --strip-components=1 -C "$extract_dir"
+              plugin_author=$(jq -r '.author // empty' "$extract_dir/plugin.json" 2>/dev/null)
+              file_hash=$(node /tmp/hash-plugin-dir.cjs "$extract_dir")
+              rm -rf "$extract_dir" plugin_asset.tar.gz
+
+              echo "    archiveHash: $archive_hash"
+              echo "    fileHash:    $file_hash"
             fi
 
             # Compare versions and update
@@ -95,6 +139,13 @@ jobs:
                 mv marketplace.tmp2.json marketplace.tmp.json
                 updated=true
               fi
+            fi
+
+            if [ -n "$archive_hash" ] && [ -n "$file_hash" ]; then
+              jq --arg ah "$archive_hash" --arg fh "$file_hash" \
+                ".plugins[$i].archiveHash = \$ah | .plugins[$i].fileHash = \$fh" \
+                marketplace.tmp.json > marketplace.tmp2.json
+              mv marketplace.tmp2.json marketplace.tmp.json
             fi
 
             if [ "$updated" = false ]; then
