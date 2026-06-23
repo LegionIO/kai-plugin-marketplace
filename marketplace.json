@@ -49,7 +49,7 @@
     {
       "name": "legion",
       "displayName": "Legion",
-      "description": "Legion integration \u2014 daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference",
+      "description": "Legion integration — daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference",
       "repository": "LegionIO/kai-plugin-legion",
       "version": "2.1.8",
       "author": "John Hollow <https://github.com/iamhollow>",
@@ -68,7 +68,7 @@
       "description": "Dashboard and controls for Plex, Radarr, Sonarr, Tautulli, SABnzbd, qBittorrent, Bazarr, Prowlarr, Tdarr, and Wizarr",
       "repository": "KyleBoyer/kai-plugin-plex",
       "version": "0.1.1",
-      "author": "Kyle Boyer <https://github.com/KyleBoyer>",
+      "author": "Kyle Boyer",
       "tags": [
         "plex",
         "media",
@@ -76,7 +76,7 @@
       ],
       "icon": "tv",
       "archiveHash": "a54fbc5aeb74e7b042cfa7aacc1587ef2d11ceb4ec83eaf2c2583041ac8bb901",
-      "fileHash": "807a6bc1e3b1663b605f60c314667970048dd494e3d8a59b96ce92680e68e4cc"
+      "fileHash": "967eaa1652f48865fb594445cc0969d1bd4c9ec4743b4aaf1451b9331239133b"
     }
   ]
 }
