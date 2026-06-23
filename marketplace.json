@@ -67,7 +67,7 @@
       "displayName": "Plex & Media Stack",
       "description": "Dashboard and controls for Plex, Radarr, Sonarr, Tautulli, SABnzbd, qBittorrent, Bazarr, Prowlarr, Tdarr, and Wizarr",
       "repository": "KyleBoyer/kai-plugin-plex",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "Kyle Boyer",
       "tags": [
         "plex",
@@ -75,8 +75,8 @@
         "downloads"
       ],
       "icon": "tv",
-      "archiveHash": "a54fbc5aeb74e7b042cfa7aacc1587ef2d11ceb4ec83eaf2c2583041ac8bb901",
-      "fileHash": "967eaa1652f48865fb594445cc0969d1bd4c9ec4743b4aaf1451b9331239133b"
+      "archiveHash": "412d250f4df40518a88c92f83e99d4c844cc425bad32c93a5ed4c59fb4c21ed1",
+      "fileHash": "ca2d5fbf50874eb0a7236655993e60daca57bd38c39bca1414a74a4eda3f06ad"
     }
   ]
 }
