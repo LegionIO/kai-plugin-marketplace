@@ -49,7 +49,7 @@
     {
       "name": "legion",
       "displayName": "Legion",
-      "description": "Legion integration — daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference",
+      "description": "Legion integration \u2014 daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference",
       "repository": "LegionIO/kai-plugin-legion",
       "version": "2.1.8",
       "author": "John Hollow <https://github.com/iamhollow>",
@@ -61,6 +61,22 @@
       "icon": "brain-circuit",
       "archiveHash": "d03faf522a12779abb4eff64cbd03c3deeefae72221cde6ae59a84bbcc801517",
       "fileHash": "033a82fbccecf6861ce54275ddcf6dc2b2b6a247e1cdeaed0a820d770dfa8c79"
+    },
+    {
+      "name": "plex",
+      "displayName": "Plex & Media Stack",
+      "description": "Dashboard and controls for Plex, Radarr, Sonarr, Tautulli, SABnzbd, qBittorrent, Bazarr, Prowlarr, Tdarr, and Wizarr",
+      "repository": "KyleBoyer/kai-plugin-plex",
+      "version": "0.1.1",
+      "author": "Kyle Boyer <https://github.com/KyleBoyer>",
+      "tags": [
+        "plex",
+        "media",
+        "downloads"
+      ],
+      "icon": "tv",
+      "archiveHash": "a54fbc5aeb74e7b042cfa7aacc1587ef2d11ceb4ec83eaf2c2583041ac8bb901",
+      "fileHash": "807a6bc1e3b1663b605f60c314667970048dd494e3d8a59b96ce92680e68e4cc"
     }
   ]
 }
