@@ -21,15 +21,15 @@
       "displayName": "BlueBubbles",
       "description": "iMessage integration via BlueBubbles",
       "repository": "LegionIO/kai-plugin-bluebubbles",
-      "version": "0.2.20",
+      "version": "0.2.21",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "messaging",
         "imessage"
       ],
       "icon": "message-circle",
-      "archiveHash": "7e98dec25d0cad94398abcc19c1f9901d561f892cdb33ad292147e308ff22fb1",
-      "fileHash": "fca0c96ac8f4ecbeee414d13a47cc1efe076c197a880bce72a518d2572be9e96"
+      "archiveHash": "4ef523a362b0b8a17259b17dcd345a27a1cd91687ca4dff0c8ef99358004f47a",
+      "fileHash": "97ceb84e0e5ff6edca0290ab9534f0f02296e7cc70e8c892aebf62afd8a6b316"
     },
     {
       "name": "example",
