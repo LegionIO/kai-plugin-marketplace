@@ -67,7 +67,7 @@
       "displayName": "Plex & the Arr Stack",
       "description": "Dashboard and AI controls for Plex and the arr stack",
       "repository": "KyleBoyer/kai-plugin-plex",
-      "version": "0.1.2",
+      "version": "0.1.4",
       "author": "Kyle Boyer",
       "tags": [
         "plex",
@@ -75,8 +75,8 @@
         "downloads"
       ],
       "icon": "tv",
-      "archiveHash": "412d250f4df40518a88c92f83e99d4c844cc425bad32c93a5ed4c59fb4c21ed1",
-      "fileHash": "ca2d5fbf50874eb0a7236655993e60daca57bd38c39bca1414a74a4eda3f06ad"
+      "archiveHash": "71cddcf9eb2a49310942609bfe7798f830afe36cfb93309d7c5d4475ca4e935b",
+      "fileHash": "690be4410ea4183cc474093c846327fd5a3ea9dace0c9440dd61db29ba032d83"
     }
   ]
 }
