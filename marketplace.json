@@ -21,15 +21,15 @@
       "displayName": "BlueBubbles",
       "description": "iMessage integration via BlueBubbles",
       "repository": "LegionIO/kai-plugin-bluebubbles",
-      "version": "0.2.21",
+      "version": "0.2.22",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "messaging",
         "imessage"
       ],
       "icon": "message-circle",
-      "archiveHash": "4ef523a362b0b8a17259b17dcd345a27a1cd91687ca4dff0c8ef99358004f47a",
-      "fileHash": "97ceb84e0e5ff6edca0290ab9534f0f02296e7cc70e8c892aebf62afd8a6b316"
+      "archiveHash": "08b079a9415b55685ff60cfa5aefe7a2b6c3b4bddcea7be9bb94013bca14161f",
+      "fileHash": "3ad8b09cb1b5251f054cfb78563c14dc06d98a56fdf8b41edb7c8ac4a43025ff"
     },
     {
       "name": "example",
@@ -67,7 +67,7 @@
       "displayName": "Plex & the Arr Stack",
       "description": "Dashboard and AI controls for Plex and the arr stack",
       "repository": "KyleBoyer/kai-plugin-plex",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "author": "Kyle Boyer",
       "tags": [
         "plex",
@@ -75,8 +75,8 @@
         "downloads"
       ],
       "icon": "tv",
-      "archiveHash": "71cddcf9eb2a49310942609bfe7798f830afe36cfb93309d7c5d4475ca4e935b",
-      "fileHash": "690be4410ea4183cc474093c846327fd5a3ea9dace0c9440dd61db29ba032d83"
+      "archiveHash": "cf8acfacfbd2530fa8e714707cbb76dcab56280391fc4325390e6c8e9289431b",
+      "fileHash": "c8a6a8e82e6805cd92caf89de7a6b5e15ac430f6a5465e256ce6973f9bdb962b"
     }
   ]
 }
