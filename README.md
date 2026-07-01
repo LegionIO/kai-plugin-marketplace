@@ -15,6 +15,7 @@ This repository hosts `marketplace.json` — a catalog of plugins available for 
 | [example](https://github.com/LegionIO/kai-plugin-example) | v1.0.5 | A template and reference implementation for building Kai plugins |
 | [legion](https://github.com/LegionIO/kai-plugin-legion) | v2.1.8 | Legion integration — daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference |
 | [plex](https://github.com/KyleBoyer/kai-plugin-plex) | v0.1.5 | Dashboard and AI controls for Plex and the arr stack |
+| [visualizations](https://github.com/LegionIO/kai-plugin-visualizations) | v0.1.0 | AI-driven diagram & chart authoring. Generate and iterate on ERDs, architecture diagrams, flowcharts, and data charts through an agentic chat loop, rendered live with Mermaid and Chart.js. |
 
 ## Schema Version
 

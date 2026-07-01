@@ -91,7 +91,9 @@
         "chartjs",
         "ai"
       ],
-      "icon": "workflow"
+      "icon": "workflow",
+      "archiveHash": "2014f8d14f9068f2dea324cc5f0cf93a41aecc8ea614ebdcb91121fde022e71f",
+      "fileHash": "6b5f09e467779c85bf74c3917021751ec2e4e7721252300fedf455b281d31c1e"
     }
   ]
 }
