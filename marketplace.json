@@ -6,30 +6,30 @@
       "displayName": "Cron Scheduler",
       "description": "Schedule recurring tasks and reminders",
       "repository": "LegionIO/kai-plugin-cron",
-      "version": "0.1.13",
+      "version": "0.1.14",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "scheduling",
         "automation"
       ],
       "icon": "clock",
-      "archiveHash": "7650eee4a7119c9648fcff28d2edb37e3ac62e9d53a020227f95693e40bb802c",
-      "fileHash": "165b523155cdfd68b35d939e12dd62fc19f384c487ff92e832819946d410e896"
+      "archiveHash": "e9df6d0bfe5a0c5a64dba3e8eeafc0e3ce1a2198d1b40d7ac654bc43ad7c85e2",
+      "fileHash": "fb3db19db7cbd8e1c3f5613d866de33be036c13a3212ee15f93fc9ac7ab154a6"
     },
     {
       "name": "bluebubbles",
       "displayName": "BlueBubbles",
       "description": "iMessage integration via BlueBubbles",
       "repository": "LegionIO/kai-plugin-bluebubbles",
-      "version": "0.2.22",
+      "version": "0.2.23",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "messaging",
         "imessage"
       ],
       "icon": "message-circle",
-      "archiveHash": "08b079a9415b55685ff60cfa5aefe7a2b6c3b4bddcea7be9bb94013bca14161f",
-      "fileHash": "3ad8b09cb1b5251f054cfb78563c14dc06d98a56fdf8b41edb7c8ac4a43025ff"
+      "archiveHash": "73d9a3b2ab1db3a4cd91c7f4faa7ccdfb5173c4055aee7ca4561aba43036759f",
+      "fileHash": "1de1ba241e62f959687a513137fe396b5f83f3c6693e33a966e719d49dec5430"
     },
     {
       "name": "example",
@@ -67,7 +67,7 @@
       "displayName": "Plex & the Arr Stack",
       "description": "Dashboard and AI controls for Plex and the arr stack",
       "repository": "KyleBoyer/kai-plugin-plex",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "author": "Kyle Boyer",
       "tags": [
         "plex",
@@ -75,15 +75,15 @@
         "downloads"
       ],
       "icon": "tv",
-      "archiveHash": "cf8acfacfbd2530fa8e714707cbb76dcab56280391fc4325390e6c8e9289431b",
-      "fileHash": "c8a6a8e82e6805cd92caf89de7a6b5e15ac430f6a5465e256ce6973f9bdb962b"
+      "archiveHash": "3b1521294b97e5ace18be4d42c9d53f5e4ec145a513646a8b57d37e6529d2ca4",
+      "fileHash": "907a1abcd932b3b592002e7100833fdd55969ce1143779ed67d4f2aead4b6d53"
     },
     {
       "name": "visualizations",
       "displayName": "Visualizations",
       "description": "AI-driven diagram & chart authoring. Generate and iterate on ERDs, architecture diagrams, flowcharts, and data charts through an agentic chat loop, rendered live with Mermaid and Chart.js.",
       "repository": "LegionIO/kai-plugin-visualizations",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "diagrams",
@@ -92,8 +92,8 @@
         "ai"
       ],
       "icon": "workflow",
-      "archiveHash": "2014f8d14f9068f2dea324cc5f0cf93a41aecc8ea614ebdcb91121fde022e71f",
-      "fileHash": "6b5f09e467779c85bf74c3917021751ec2e4e7721252300fedf455b281d31c1e"
+      "archiveHash": "3f1cf987209c67205f6624c89c152d78d1d7153ffcfe8c365be5e5108c93dc37",
+      "fileHash": "d2799104d51576a49d5554e7616e638f7bb555ea3275aa04902df40bf9e59eff"
     },
     {
       "name": "msgraph",
