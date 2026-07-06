@@ -100,7 +100,7 @@
       "displayName": "Teams",
       "description": "Microsoft Teams chat via Graph API — list, search, read, and send DMs and group chats with AI tooling",
       "repository": "LegionIO/kai-plugin-msgraph",
-      "version": "0.4.6",
+      "version": "0.4.7",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "messaging",
@@ -108,8 +108,8 @@
         "microsoft"
       ],
       "icon": "message-square-more",
-      "archiveHash": "136a54ba5e5ad404b9e0b6dc0ec82c483325204c13c6a26e562c97eba52bebbe",
-      "fileHash": "56565d82f04c7687ee8a0fdbc146d47d87a112b5530880ef8eef7eae15f5cd1d"
+      "archiveHash": "c832ffc410898ab28334beedb291639c03ae3645892b8cad50561c76c4f453c4",
+      "fileHash": "622365af69a0d20e1fe6d29a0af94d1acccba8e7b762c9322441ca22157c68fe"
     }
   ]
 }
