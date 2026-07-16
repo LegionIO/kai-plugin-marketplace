@@ -83,7 +83,7 @@
       "displayName": "Visualizations",
       "description": "AI-driven diagram & chart authoring. Generate and iterate on ERDs, architecture diagrams, flowcharts, and data charts through an agentic chat loop, rendered live with Mermaid and Chart.js.",
       "repository": "LegionIO/kai-plugin-visualizations",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "diagrams",
@@ -92,15 +92,15 @@
         "ai"
       ],
       "icon": "workflow",
-      "archiveHash": "ede9e42a05452deb807917c11f7788e7234ea96db428ba035a229cd2b5dead20",
-      "fileHash": "0e52c965e496f9cb079ab572a5d7ccbc0ef76ef4cb6a44642b21fb9de3553a93"
+      "archiveHash": "71de6d08b8b1c5e2729c6e1f4cfbb7cbba5fda43e0fb9a68c19a4e711792a458",
+      "fileHash": "2155c166eada2607f8a8373cf416a2e92d9b5427e55e51941bfea1164c59a561"
     },
     {
       "name": "msgraph",
       "displayName": "Teams",
       "description": "Microsoft Teams chat via Graph API — list, search, read, and send DMs and group chats with AI tooling",
       "repository": "LegionIO/kai-plugin-msgraph",
-      "version": "0.5.10",
+      "version": "0.5.11",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "messaging",
@@ -108,8 +108,8 @@
         "microsoft"
       ],
       "icon": "message-square-more",
-      "archiveHash": "e26c362bed2bd3a2f47a0d2ebbdba31344b7d74d3d3c75d1d84969ff86e73a44",
-      "fileHash": "9373d0bb40eb7d17b730c6f4ab967a819efe76adf773b13a6943f6f72b276ecb"
+      "archiveHash": "625d85f70a838d86db932f53bce1bb8303bb62a7940bc9be7050d165164eddeb",
+      "fileHash": "0c2889b8dac53f47631f71882e2e24d76ec49b4ea80ea87a9ce17ac9dc2755ac"
     }
   ]
 }
