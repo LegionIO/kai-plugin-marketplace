@@ -110,6 +110,22 @@
       "icon": "message-square-more",
       "archiveHash": "aa633e8540c9e55714bb385a1f36fe6e17b5d930c83e393f517b8739992c9ffb",
       "fileHash": "a9d4e051c8772519dca4b8a5ce04e9588dd79d548080abab5c8f608a12ba52cf"
+    },
+    {
+      "name": "rally",
+      "displayName": "Rally",
+      "description": "Search, plan, synchronize, and manage Broadcom Rally work with OAuth-secured AI tools",
+      "repository": "LegionIO/kai-plugin-rally",
+      "version": "0.3.2",
+      "author": "Kyle Boyer",
+      "tags": [
+        "agile",
+        "project-management",
+        "rally"
+      ],
+      "icon": "clipboard-list",
+      "archiveHash": "6b8b31b0c033ac363502486d313fd346100e40af7d9527fc2bff63346fdb8a03",
+      "fileHash": "689755278c9fa3ec99f57004d18b91bdad64f016927ea8d0e1f0ca7a13d5ae04"
     }
   ]
 }
