@@ -15,7 +15,7 @@ This repository hosts `marketplace.json` — a catalog of plugins available for 
 | [example](https://github.com/LegionIO/kai-plugin-example) | v1.0.5 | A template and reference implementation for building Kai plugins |
 | [legion](https://github.com/LegionIO/kai-plugin-legion) | v2.1.8 | Legion integration — daemon health, event streaming, proactive threads, workflow routing, knowledge panels, and daemon-powered LLM inference |
 | [plex](https://github.com/KyleBoyer/kai-plugin-plex) | v0.1.10 | Dashboard and AI controls for Plex and the arr stack |
-| [visualizations](https://github.com/LegionIO/kai-plugin-visualizations) | v0.1.4 | AI-driven diagram & chart authoring. Generate and iterate on ERDs, architecture diagrams, flowcharts, and data charts through an agentic chat loop, rendered live with Mermaid and Chart.js. |
+| [visualizations](https://github.com/LegionIO/kai-plugin-visualizations) | v0.1.5 | AI-driven diagram & chart authoring. Generate and iterate on ERDs, architecture diagrams, flowcharts, and data charts through an agentic chat loop, rendered live with Mermaid and Chart.js. |
 | [msgraph](https://github.com/LegionIO/kai-plugin-msgraph) | v0.5.16 | Microsoft Teams chat via Graph API — list, search, read, and send DMs and group chats with AI tooling |
 | [rally](https://github.com/LegionIO/kai-plugin-rally) | v0.3.2 | Search, plan, synchronize, and manage Broadcom Rally work with OAuth-secured AI tools |
 

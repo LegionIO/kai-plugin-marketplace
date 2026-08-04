@@ -83,7 +83,7 @@
       "displayName": "Visualizations",
       "description": "AI-driven diagram & chart authoring. Generate and iterate on ERDs, architecture diagrams, flowcharts, and data charts through an agentic chat loop, rendered live with Mermaid and Chart.js.",
       "repository": "LegionIO/kai-plugin-visualizations",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "author": "Kyle Boyer <https://github.com/KyleBoyer>",
       "tags": [
         "diagrams",
@@ -92,8 +92,8 @@
         "ai"
       ],
       "icon": "workflow",
-      "archiveHash": "71de6d08b8b1c5e2729c6e1f4cfbb7cbba5fda43e0fb9a68c19a4e711792a458",
-      "fileHash": "2155c166eada2607f8a8373cf416a2e92d9b5427e55e51941bfea1164c59a561"
+      "archiveHash": "94bcc2eb700649326b923321adc08a70096266d6136c3a855d9aebe6f356240a",
+      "fileHash": "9f56fed98c0e9dcff27bdc1f4e23bd4052fe364c95159aad3d71662fdaf7ea9f"
     },
     {
       "name": "msgraph",
